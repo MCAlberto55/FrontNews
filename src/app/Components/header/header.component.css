@@ -1,0 +1,7 @@
+.bi-person-circle{
+    color: aliceblue;
+}
+
+.bi-person-circle:hover{
+    cursor: pointer;
+}
