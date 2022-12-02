@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(to right top, #3e65d4, #007fda, #0090c7, #009ca7, #00a386, #00a888, #00ad89, #00b28b, #00b6b3, #00b7d7, #00b4f0, #5faefb);}
+.newsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

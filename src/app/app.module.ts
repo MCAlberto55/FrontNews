@@ -14,6 +14,7 @@ import { NewFormComponent } from './Components/new-form/new-form.component';
 import { LandingComponent } from './Components/landing/landing.component';
 import { NewViewComponent } from './Components/new-view/new-view.component';
 import { ListNewsComponent } from './Components/list-news/list-news.component';
+import { ListNewsSearchComponent } from './Components/list-news-search/list-news-search.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ListNewsComponent } from './Components/list-news/list-news.component';
     NewFormComponent,
     LandingComponent,
     NewViewComponent,
-    ListNewsComponent
+    ListNewsComponent,
+    ListNewsSearchComponent,
   ],
   imports: [
     BrowserModule,

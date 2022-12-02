@@ -12,8 +12,8 @@
           <div class="col-md-8">
             <div class="search">
                 <i class="bi bi-search"></i>
-              <input type="text" class="form-control" placeholder="Buscar noticia">
-              <button class="btn btn-primary">Buscar</button>
+              <input type="text" class="form-control" (keydown.enter)="clickSearch('searchValue')" id="searchValue" placeholder="Buscar noticia">
+              <button class="btn btn-primary" (click)="clickSearch('searchValue')">Buscar</button>
             </div>
           </div>
         </div>
