@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SendDataService } from 'src/app/Services/send-data.service';
+
 
 @Component({
   selector: 'app-search-bar',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class SearchBarComponent {
 
+  constructor(private dataSender: SendDataService){
+
+  }
+
+  clickSearch(contentId: string): void{
+    this.dataSender.sendData(contentId, 'newsListSearch')  
+  }
 }

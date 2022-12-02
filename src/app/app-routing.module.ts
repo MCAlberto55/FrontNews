@@ -5,6 +5,7 @@ import {LandingComponent} from '../app/Components/landing/landing.component'
 import {LogInComponent} from '../app/Components//log-in/log-in.component'
 import {RegisterComponent} from '../app/Components/register/register.component'
 import {NewFormComponent} from '../app/Components/new-form/new-form.component'
+import { ListNewsSearchComponent } from './Components/list-news-search/list-news-search.component';
 
 
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'login', component: LogInComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'newsList', component: ListNewsComponent },
-  { path: 'generateNew', component: NewFormComponent }
+  { path: 'generateNew', component: NewFormComponent },
+  { path: 'newsListSearch', component: ListNewsSearchComponent }
 ];
 
 @NgModule({

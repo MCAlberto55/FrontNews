@@ -29,17 +29,17 @@
   
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-              <form>
+              <form #miformulario="ngForm" (ngSubmit)="login(miformulario)">
     
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
+                  <input type="email" name="email"  id="form3Example3" class="form-control" ngModel/>
                   <label class="form-label" for="form3Example3">Email</label>
                 </div>
   
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
+                  <input type="password" name="password" id="form3Example4" class="form-control" ngModel/>
                   <label class="form-label" for="form3Example4">Contraseña</label>
                 </div>
   
@@ -53,22 +53,7 @@
                 <!-- Register buttons -->
                 <div class="text-center">
                   <p>¿No tienes una cuenta? <a routerLink="/register">Registrate</a></p>
-                  <p>o inicia sesión con:</p>
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="bi bi-facebook"></i>
-                  </button>
-  
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="bi bi-google"></i>                  
-                </button>
-  
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="bi bi-twitter"></i>
-                  </button>
-  
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="bi bi-github"></i>
-                  </button>
+                  
                 </div>
               </form>
             </div>

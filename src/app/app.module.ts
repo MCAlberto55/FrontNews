@@ -14,6 +14,9 @@ import { NewFormComponent } from './Components/new-form/new-form.component';
 import { LandingComponent } from './Components/landing/landing.component';
 import { NewViewComponent } from './Components/new-view/new-view.component';
 import { ListNewsComponent } from './Components/list-news/list-news.component';
+import { ListNewsSearchComponent } from './Components/list-news-search/list-news-search.component';
+import { FormsModule } from '@angular/forms';
+import { RssBarComponent } from './Components/rss-bar/rss-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,15 @@ import { ListNewsComponent } from './Components/list-news/list-news.component';
     NewFormComponent,
     LandingComponent,
     NewViewComponent,
-    ListNewsComponent
+    ListNewsComponent,
+    ListNewsSearchComponent,
+    RssBarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

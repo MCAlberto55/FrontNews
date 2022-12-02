@@ -13,4 +13,5 @@ export class SearchNewService {
   public getAll(page: String): Observable<any> {
     return this.http.get(this.Api + page);
   }
+
 }
