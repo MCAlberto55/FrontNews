@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { SendDataService } from 'src/app/Services/send-data.service';
 
 
 @Component({
@@ -9,21 +9,11 @@ import { Router } from '@angular/router';
 })
 export class SearchBarComponent {
 
-  constructor(private router: Router){
+  constructor(private dataSender: SendDataService){
 
   }
 
   clickSearch(contentId: string): void{
-    this.search(contentId)  
-  }
-
-  search(contentId: string): void{
-    var searchValue = (<HTMLInputElement>document.getElementById(contentId)).value;
-    console.log(searchValue);
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    this.router.onSameUrlNavigation = 'reload';
-    this.router.navigate(
-    ['newsListSearch'],
-    { queryParams: { searchFor: searchValue } });
+    this.dataSender.sendData(contentId, 'newsListSearch')  
   }
 }
